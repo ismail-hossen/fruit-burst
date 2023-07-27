@@ -41,8 +41,8 @@
   <!-- header section -->
   <header class="container mx-auto relative">
     <!-- navigation bar -->
-    <div class="my-12">
-      <div class="navbar px-8 h-24 rounded-full md:bg-[#F85559]">
+    <div class="my-10">
+      <div class="navbar p-6 rounded-full md:bg-[#F85559]">
         <div class="navbar-start lg:flex">
           <ul class="menu menu-horizontal px-1 text-white">
             <li><a>Home</a></li>
@@ -277,7 +277,7 @@
                 <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
                 <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
               </div>
-              <p class="text-red-500">Details</p>
+              <button class="text-red-500" onclick="my_modal_5.showModal()">Details</button>
             </div>
           </div>
         </div>
@@ -302,7 +302,7 @@
                 <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
                 <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
               </div>
-              <p class="text-red-500">Details</p>
+              <button class="text-red-500" onclick="my_modal_5.showModal()">Details</button>
             </div>
           </div>
         </div>
@@ -327,7 +327,7 @@
                 <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
                 <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
               </div>
-              <p class="text-red-500">Details</p>
+              <button class="text-red-500" onclick="my_modal_5.showModal()">Details</button>
             </div>
           </div>
         </div>
@@ -352,7 +352,7 @@
                 <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
                 <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
               </div>
-              <p class="text-red-500">Details</p>
+              <button class="text-red-500" onclick="my_modal_5.showModal()">Details</button>
             </div>
           </div>
         </div>
@@ -360,6 +360,38 @@
       <div class="flex justify-center pt-8">
         <button class="btn bg-red-500 text-lg w-38 h-18 capitalize font-extrabold text-white">Shop All</button>
       </div>
+      <!-- Open the modal using ID.showModal() method -->
+      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <form method="dialog" class="modal-box">
+          <div class="card bg-base-100">
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center gap-8">
+              <h2 class="card-title">Apple</h2>
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              <!-- ratings -->
+              <div class="rating rating-md rating-half">
+                <input type="radio" name="rating-10" class="rating-hidden" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" checked />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-outline text-red-500 font-bold border-red-500">Close</button>
+                <button class="btn bg-red-500 text-white font-bold capitalize">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </dialog>
     </section>
     <!-- Meet the team section -->
     <section class="my-24">
